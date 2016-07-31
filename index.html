@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo</title>
+    <style>
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font: 100 16px "Helvetica-Normal", sans-serif;
+  color: #050505;
+  letter-spacing: 2.0px;
+  width: 1200px;
+}
+header {
+}
+header nav {
+  padding: 65px 0 0 0;
+  font-size: 16px;
+  background-color: #464f77;
+  float: left;
+  max-width: 335px;
+  color: #b2b5c3;
+  height: 100%;
+  width: 28%;
+}
+header h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 5px 20px 0 102px;
+  display: inline-block;
+}
+/*
+header h2:before {
+  content: url("images/checkbox.png");
+  width: 30px;
+  margin-left: -35px;
+  padding-right: 10px;
+}
+header h2.all:before {
+  content: url("images/list-icon.png");
+}
+*/
+
+header h2 {
+  background: #464f77 url("images/checkbox.png") 70px 1px no-repeat;
+}
+header h2.all {
+  background: #464f77 url("images/list-icon.png") 70px 1px no-repeat;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  }
+header .selected {
+  color: #ffffff;
+  padding-left: 100px;
+  margin-left: -100px;
+}
+header ul {
+  padding-left: 100px;
+  list-style: none;
+  margin-bottom: 65px;
+}
+header li {
+  padding: 15px 0;
+}
+main {
+  padding: 0 100px 220px 32px;
+  height: 100%;
+  overflow:hidden;
+}
+main  h2 {
+  margin: 30px 0 40px 0;
+  color: black;
+  font-weight: normal;
+}
+main  h3 {
+    color: #1485d5;
+    margin-bottom: 17px;
+    font-weight: 100;
+}
+main h3:before {
+  content: url("images/add.png");
+  padding-right: 10px;
+}
+main ul {
+
+}
+main li {
+  padding: 15px 0;
+  border-top: 1px solid;
+  border-color: #e7e7e7;
+}
+main li:before {
+  content: url("images/item-checkbox.png");
+  padding-right: 10px;
+}
+main li.completed:before {
+  content: url("images/checked-box.png");
+  padding-right: 10px;
+}
+main li:hover {
+    color: #1485d5;
+}
+main li.completed:hover {
+    color: #b2b5c3;
+}
+.hamburger {
+  background: transparent url("images/menu-icon.png") no-repeat;
+  width: 23px;
+  height: 18px;
+  margin-top: 20px;
+}
+.entry {
+  padding: 10px 34px 10px 0;
+}
+.completed  {
+  text-decoration:line-through;
+  color: #b2b5c3;
+}
+.incomplete {
+
+}
+main .completed {
+
+}
+main .incomplete {
+
+}
+header .selected {
+  background: #383f5f;
+}
+.badge {
+  margin-right: 40px;
+  padding: 5px 6px 5px 9px;
+  border-radius: 15px;
+  background-color: #6b7292;
+  color: #ccced8;
+  font-size: 16px;
+}
+header .badge {
+  float: right;
+}
+main h3 {
+  display: inline-block;
+}
+main .badge {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.selected .badge {
+  background-color: #148fd5;
+  color: #deebf7;
+}
+.hamburger {
+
+}
+    </style>
+  </head>
+  <body>
+  <header>
+    <nav>
+    <h2 class="all">All Todos</h2> <span class="badge">18</span></h2>
+    <ul>
+        <li class="selected"><span>02/16</span><span class="badge">8</span></li>
+        <li><span>03/16</span>                 <span class="badge">2</span></li>
+        <li><span>04/16</span>                 <span class="badge">1</span></span></li>
+        <li><span>05/16</span>                 <span class="badge">1</span></li>
+        <li><span>06/16</span>                 <span class="badge">6</span></li>
+    </ul>
+    <h2 >Completed</h2>
+    <ul class="completed">
+        <li><span>02/16</span></li>
+        <li><span>03/16</span></li>
+        <li><span>04/16</span></li>
+        <li><span>05/16</span></li>
+        <li><span>06/16</span></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+      <div class="hamburger"></div>
+      <h2 class="selected">02/16<span class="badge">8</span></h2>
+      <h3>Add new to do</h3>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li class="completed">Item 3</v>
+        <li class="completed">Item 4</v>
+        <li class="completed">Item 5</v>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li
+    </ul>
+  </main>
+  </body>
+</html>
